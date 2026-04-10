@@ -1,0 +1,92 @@
+body {
+  background: #0a0a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  max-width: 420px;
+  margin: auto;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#userPanel {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+#authBox input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+#authBox button {
+  width: 49%;
+  padding: 10px;
+  margin-top: 6px;
+  border: none;
+  border-radius: 6px;
+  background: #4a7cff;
+  color: white;
+  cursor: pointer;
+}
+
+#authMsg {
+  margin-top: 10px;
+  color: #ff6b6b;
+}
+
+#tapButton {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #ffe066, #ff9f1c);
+  border-radius: 50%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 25px #ff9f1c;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.price {
+  color: #ffe066;
+  font-weight: bold;
+}
+
+#leaderboard div {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#cooldown {
+  text-align: center;
+  color: #ff6b6b;
+  margin-top: 10px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Star Kombat Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="app">
+    <div class="top">
+      <h1>⭐ Star Kombat Online</h1>
+      <div id="userPanel">
+        <span id="username">@guest</span>
+        <span id="level">LVL 1</span>
+      </div>
+    </div>
+
+    <div id="authBox">
+      <input id="loginUser" placeholder="Никнейм" />
+      <input id="loginPass" placeholder="Пароль" type="password" />
+      <button id="btnLogin">Войти</button>
+      <button id="btnRegister">Регистрация</button>
+      <div id="authMsg"></div>
+    </div>
+
+    <div id="gameBox" style="display:none;">
+      <div id="balanceBox">
+        <h2><span id="balance">0</span> ★</h2>
+        <p>За клик: <span id="perClick">1</span></p>
+        <p>Пассив: <span id="perSecond">0</span> / сек</p>
+      </div>
+
+      <div id="tapButton">Тапай!</div>
+      <div id="cooldown"></div>
+
+      <div id="upgrades">
+        <h3>Апгрейды</h3>
+
+        <div class="card" id="upgradeClick">
+          <b>Boost клика</b>
+          <p>+1 за клик</p>
+          <span class="price" id="priceClick">20 ★</span>
+        </div>
+
+        <div class="card" id="upgradePassive">
+          <b>Пассивный доход</b>
+          <p>+1 / сек</p>
+          <span class="price" id="pricePassive">50 ★</span>
+        </div>
+
+        <div class="card" id="autoClicker">
+          <b>Автокликер</b>
+          <p>Кликает сам</p>
+          <span class="price">1000 ★</span>
+          <span id="autoStatus"></span>
+        </div>
+      </div>
+
+      <div id="refBox">
+        <h3>Реферальная ссылка</h3>
+        <div id="refLink">Авторизуйся</div>
+      </div>
+
+      <div id="leaderboardBox">
+        <h3>Топ 50</h3>
+        <div id="leaderboard"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
