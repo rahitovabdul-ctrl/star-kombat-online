@@ -6,6 +6,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// ВАЖЛИВО: отдаём index.html, game.js, style.css
+app.use(express.static(__dirname));
+
 const DB_FILE = "db.json";
 
 if (!fs.existsSync(DB_FILE)) {
